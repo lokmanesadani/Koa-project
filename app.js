@@ -15,7 +15,7 @@ render(app, {
     debug: false
 })
 const router = new KoaRouter()
-const port = process.env.port || 3000
+const port = process.env.port || 8080
 
 
 
@@ -23,7 +23,7 @@ const port = process.env.port || 3000
 
 
 
-router.get('/', async ctx => (ctx.render('index', {title : "lokmane sadani"})))
+router.get('/', async ctx => (ctx.render('index', {courses : [{title : "lokmane sadani"},{title : "lokmane sadani"}]})))
 
 
 
